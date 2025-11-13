@@ -1,0 +1,215 @@
+
+
+body {
+    margin: 0;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    background: #ffe6f2; /* soft pink background */
+  }
+  
+  /* CONTAINER */
+  .cv-container {
+    width: 1000px;
+    margin: 40px auto;
+    display: flex;
+    background: #ffffff;
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.3);
+    border-radius: 12px;
+    overflow: hidden;
+    height: 850px;
+  }
+  
+  /* LEFT SECTION */
+  .left-section {
+    width: 30%;
+    background-color: #ff66b2; /* bright Barbie pink */
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .profile {
+    text-align: center;
+    border-bottom: 3px solid #fff;
+    padding-bottom: 15px;
+  }
+  
+  .profile img {
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid #fff;
+  }
+  
+  .profile h2 {
+    margin: 10px 0 5px;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+  
+  .profile p {
+    margin: 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #fff;
+  }
+  
+  .left-section h3 {
+    background-color: #ff99cc; /* lighter pink */
+    color: #fff;
+    padding: 5px;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 6px;
+  }
+  
+  .left-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+  
+  .left-section ul li {
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+  
+  /* LANGUAGE BARS */
+  .lang-bar p {
+    margin: 8px 0 3px;
+    font-size: 14px;
+  }
+  
+  .bar {
+    width: 100%;
+    height: 6px;
+    background: #ffe6f2; /* pale pink bar background */
+    margin-bottom: 6px;
+    border-radius: 3px;
+  }
+  .bar.full {
+    width: 100%;
+    background: #fff;
+  }
+  .bar.three-quarter {
+    width: 75%;
+    background: #fff;
+  }
+  .bar.half {
+    width: 50%;
+    background: #fff;
+  }
+  .bar.quarter {
+    width: 25%;
+    background: #fff;
+  }
+  
+  /* RIGHT SECTION */
+  .right-section {
+    width: 70%;
+    padding: 25px;
+    background-color: #fff;
+    color: #444;
+  }
+  
+  .right-section h3 {
+    background-color: #ff66b2; /* Barbie pink headers */
+    color: #fff;
+    padding: 5px 10px;
+    margin-top: 20px;
+    border-radius: 6px;
+  }
+  
+  .right-section p,
+  td,
+  li {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  table td {
+    padding: 5px 10px;
+    vertical-align: top;
+    border-bottom: 1px solid #f0a6d2;
+  }
+  
+  /* SKILLS */
+  .skills ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .skills ul li::before {
+    content: "❤ ";
+    color: #ff99cc; /* cute heart bullet */
+    font-weight: bold;
+  }
+  
+  /* 🎀 Responsive Design 🎀 */
+  
+  /* Tablets */
+  @media (max-width: 768px) {
+    .cv-container {
+      width: 95%;
+      flex-direction: column;
+    }
+  
+    .left-section,
+    .right-section {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    .profile img {
+      width: 50%;
+      height: auto;
+    }
+  
+    table td {
+      display: block;
+      width: 100%;
+      border: none;
+      padding: 5px 0;
+    }
+  
+    .left-section h3,
+    .right-section h3 {
+      text-align: center;
+    }
+  }
+  
+  /* Phones */
+  @media (max-width: 480px) {
+    .cv-container {
+      margin: 10px auto;
+      width: 95%;
+    }
+  
+    .profile img {
+      width: 70%;
+    }
+  
+    body {
+      font-size: 13px;
+    }
+  
+    .left-section,
+    .right-section {
+      padding: 10px;
+    }
+  
+    .profile h2 {
+      font-size: 18px;
+    }
+  
+    .right-section h3,
+    .left-section h3 {
+      font-size: 16px;
+    }
+  }
+  
